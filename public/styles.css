@@ -1,0 +1,103 @@
+body {
+  font-family: "Helvetica";
+}
+
+h2 {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #575ed8;
+}
+
+#contenedor {
+  margin: 230px auto;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  max-width: 900px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#pagetitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8rem;
+}
+
+#contenedor p {
+  padding-left: 1.5rem;
+}
+
+#chat-window {
+  height: 400px;
+  overflow: auto;
+  background: #f9f9f9;
+}
+
+@keyframes animate_text {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+#output {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: animate_text 10s linear infinite;
+  white-space: nowrap;
+}
+
+
+#output p {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+label {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 20px;
+}
+
+input {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background: #eee;
+  border: 0;
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+button {
+  background: #c92727;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+}
+
+button:nth-of-type(2) {
+  background: rgb(39, 39, 212);
+}
+
+strong {
+  color: #c92727;
+}
+
+#register {
+  background: rgb(55, 55, 177);
+}
+
+.todocontainer {
+  display: flex;
+  justify-content: space-between;
+}
